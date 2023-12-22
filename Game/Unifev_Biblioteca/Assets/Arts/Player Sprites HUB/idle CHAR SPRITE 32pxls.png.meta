@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d3f5ab820920ebf498006074c8840b1b
+guid: 4ed3ffabd030b1f479d9e60644b044c1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CHAR SPRITE 32pxls (sheet)_0
+      name: idle CHAR SPRITE 32pxls_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 0
-        width: 26
-        height: 31
+        width: 1300
+        height: 1550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eef376be16ceb74695eced72f8236b1
-      internalID: -929850430
+      spriteID: 6cca6886c4576ae4e8ca9d10b6b8b490
+      internalID: 523126703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CHAR SPRITE 32pxls (sheet)_1
+      name: idle CHAR SPRITE 32pxls_1
       rect:
         serializedVersion: 2
-        x: 35
+        x: 1300
         y: 0
-        width: 26
-        height: 30
+        width: 1300
+        height: 1550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2219e28425efcf4aae854f48304651e
-      internalID: 74450648
+      spriteID: 7021014e378497346a7dbf3827fcdaf6
+      internalID: 426945828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CHAR SPRITE 32pxls (sheet)_2
+      name: idle CHAR SPRITE 32pxls_2
       rect:
         serializedVersion: 2
-        x: 67
+        x: 2600
         y: 0
-        width: 26
-        height: 30
+        width: 1300
+        height: 1550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15403cffa62d82b4d80f0bc4fd769666
-      internalID: -1261229551
+      spriteID: 79b86ddb0e20cec469989abaee9fcb83
+      internalID: -1141193749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CHAR SPRITE 32pxls (sheet)_3
+      name: idle CHAR SPRITE 32pxls_3
       rect:
         serializedVersion: 2
-        x: 99
+        x: 3900
         y: 0
-        width: 26
-        height: 30
+        width: 1300
+        height: 1550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ad8b83055624904dba1d787af3f94af
-      internalID: -863989341
+      spriteID: 968e8caa4eea46c40911eadef533529b
+      internalID: 2115816534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CHAR SPRITE 32pxls (sheet)_4
+      name: idle CHAR SPRITE 32pxls_4
       rect:
         serializedVersion: 2
-        x: 131
+        x: 5200
         y: 0
-        width: 26
-        height: 30
+        width: 1300
+        height: 1550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64b218e3c2d81bc40ac67d3e74055e64
-      internalID: -1578332267
+      spriteID: 3fe71682abe23d148a0c7d2381506a21
+      internalID: -1859470411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CHAR SPRITE 32pxls (sheet)_5
+      name: idle CHAR SPRITE 32pxls_5
       rect:
         serializedVersion: 2
-        x: 163
+        x: 6500
         y: 0
-        width: 26
-        height: 30
+        width: 1300
+        height: 1550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79223b544d4699f43ae4288cf362fcfe
-      internalID: 2141201839
+      spriteID: 347aa5e3da50e2441bceb0c377657f30
+      internalID: -782718688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CHAR SPRITE 32pxls (sheet)_6
+      name: idle CHAR SPRITE 32pxls_6
       rect:
         serializedVersion: 2
-        x: 195
+        x: 7800
         y: 0
-        width: 26
-        height: 31
+        width: 1300
+        height: 1550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,8 +263,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04dd8fd55221d464a81688075fe2a941
-      internalID: 249395034
+      spriteID: f1a3974bda8e8f24d8f936f5b7c98799
+      internalID: 1392890324
       vertices: []
       indices: 
       edges: []
@@ -280,13 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CHAR SPRITE 32pxls (sheet)_0: -929850430
-      CHAR SPRITE 32pxls (sheet)_1: 74450648
-      CHAR SPRITE 32pxls (sheet)_2: -1261229551
-      CHAR SPRITE 32pxls (sheet)_3: -863989341
-      CHAR SPRITE 32pxls (sheet)_4: -1578332267
-      CHAR SPRITE 32pxls (sheet)_5: 2141201839
-      CHAR SPRITE 32pxls (sheet)_6: 249395034
+      idle CHAR SPRITE 32pxls_0: 523126703
+      idle CHAR SPRITE 32pxls_1: 426945828
+      idle CHAR SPRITE 32pxls_2: -1141193749
+      idle CHAR SPRITE 32pxls_3: 2115816534
+      idle CHAR SPRITE 32pxls_4: -1859470411
+      idle CHAR SPRITE 32pxls_5: -782718688
+      idle CHAR SPRITE 32pxls_6: 1392890324
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
