@@ -14,6 +14,7 @@ public class Code_Controler : MonoBehaviour
         if(c1 == N1 && c2 == N2 && c3 == N3) 
         {
             Check = true; 
+            Code_Obj.SetActive(false);
         }
         return Check;
     }

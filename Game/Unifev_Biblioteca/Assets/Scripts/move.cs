@@ -15,7 +15,7 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 dr = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0f);
+        Vector3 dr = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0f).normalized;
         transform.Translate(dr * Speed * Time.deltaTime,Space.Self);
     }
 }
