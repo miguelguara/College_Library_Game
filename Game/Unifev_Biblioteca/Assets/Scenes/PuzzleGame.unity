@@ -424,7 +424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f618dcd269ecfce439dc56afa9f80e0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cam_pos: {fileID: 506026493}
 --- !u!1 &286533116
 GameObject:
   m_ObjectHideFlags: 0
@@ -5155,7 +5154,7 @@ GameObject:
   m_Layer: 0
   m_Name: CamPos2
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5168,7 +5167,7 @@ Transform:
   m_GameObject: {fileID: 768513935}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07, y: -0.22796413, z: -10}
+  m_LocalPosition: {x: 0.08, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

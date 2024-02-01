@@ -15,7 +15,7 @@ public class Camera_Changer : MonoBehaviour
     {
         if(co.tag == "Player")
         {
-           // CS.Mov_cam(Move_point);
+           CS.Mov_cam(Move_point);
         }
     }
 }
