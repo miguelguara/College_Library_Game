@@ -11,9 +11,11 @@ public class Dialogue_NPC : MonoBehaviour
     private Dialogue_Control DC;
     public string[] txt, names;
     bool Can_Talk;
+    private move MV;
     void Start()
     {
         DC = FindObjectOfType<Dialogue_Control>();
+        MV = FindAnyObjectByType<move>();
     }
 
     // Update is called once per frame
@@ -29,7 +31,7 @@ public class Dialogue_NPC : MonoBehaviour
             Can_Talk = false;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && Can_Talk)
+        if(Input.GetKeyDown(KeyCode.Space) && Can_Talk && MV.Can_play)
         {
             DC.Start_Dialogue(txt,names, Icon);
         }

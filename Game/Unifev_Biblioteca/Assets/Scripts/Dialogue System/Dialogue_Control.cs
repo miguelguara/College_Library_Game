@@ -12,9 +12,15 @@ public class Dialogue_Control : MonoBehaviour
     string[] dialogues,names;
     [SerializeField]
     Image D_Icon;
+    private move MV;
     
     AudioClip Dub;
     int index;
+
+    private void Start()
+    {
+        MV = FindObjectOfType<move>();
+    }
 
     public void Start_Dialogue(string[] txts, string[]n,Sprite Icon)
     {
@@ -25,6 +31,10 @@ public class Dialogue_Control : MonoBehaviour
         D_Icon.sprite = Icon;
         UI_name.text = names[index];
         StartCoroutine(LE());
+        if(MV != null)
+        {
+            MV.Can_play = false;
+        }
 
     }
     // Letter enumetator
@@ -57,6 +67,10 @@ public class Dialogue_Control : MonoBehaviour
                 index = 0;
                 UI_txt.text = "";
                 DObj.SetActive (false);
+                if(MV != null)
+                {
+                    MV.Can_play = true;
+                }
             }
         }
     }
