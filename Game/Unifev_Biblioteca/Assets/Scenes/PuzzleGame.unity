@@ -452,11 +452,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6122588918635320890, guid: 81090cdf78f28ee4d9b6d618e1f43998, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 55
+      value: -355
       objectReference: {fileID: 0}
     - target: {fileID: 6122588918635320890, guid: 81090cdf78f28ee4d9b6d618e1f43998, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -182
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 6122588918635320890, guid: 81090cdf78f28ee4d9b6d618e1f43998, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4629,6 +4629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
+  Can_play: 0
 --- !u!50 &528681298
 Rigidbody2D:
   serializedVersion: 4
@@ -6309,11 +6310,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6122588918635320890, guid: 81090cdf78f28ee4d9b6d618e1f43998, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -20
+      value: -355
       objectReference: {fileID: 0}
     - target: {fileID: 6122588918635320890, guid: 81090cdf78f28ee4d9b6d618e1f43998, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -182
+      value: 74
       objectReference: {fileID: 0}
     - target: {fileID: 6122588918635320890, guid: 81090cdf78f28ee4d9b6d618e1f43998, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
