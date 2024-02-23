@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Dialogue_NPC : MonoBehaviour
 {
+    public LayerMask mask;
+    private Dialogue_Control DC;
+    [Header("Dialogue config.")]
     [SerializeField]
     private Sprite Icon;
-    public LayerMask mask;
     public float Radious;
-    private Dialogue_Control DC;
     public string[] txt, names;
     bool Can_Talk;
     private move MV;
@@ -21,8 +22,8 @@ public class Dialogue_NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Collider2D c = Physics2D.OverlapCircle(transform.position, Radious,mask);
-        if (c != null)
+        Collider2D c = Physics2D.OverlapCircle(transform.position,Radious,mask);
+        if(c != null)
         {
             Can_Talk = true;
         }
@@ -33,7 +34,7 @@ public class Dialogue_NPC : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space) && Can_Talk && MV.Can_play)
         {
-            DC.Start_Dialogue(txt,names, Icon);
+          DC.Start_Dialogue(txt, names,Icon);
         }
     }
 

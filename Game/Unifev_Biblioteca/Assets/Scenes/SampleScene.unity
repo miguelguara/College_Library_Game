@@ -15265,6 +15265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
+  Can_play: 0
 --- !u!212 &1659744823
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15340,14 +15341,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659744820}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -15477,17 +15478,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04044a85048f5ae49a42341bffa6226b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 3912eebefd254584aa78eeeac8a413de, type: 3}
   mask:
     serializedVersion: 2
     m_Bits: 8
-  Radious: 2.02
+  Icon: {fileID: 21300000, guid: 3912eebefd254584aa78eeeac8a413de, type: 3}
+  Radious: 1.69
   txt:
-  - Meu sistema de dialogo foda!!!
-  - Chupa nigga!!!
+  - sistema de dialogo aprimorado kkkkkkkkkkkkkkk
+  - "Oi meu nome \xE9 marcinha e seja bem vindo a Unifev!"
   names:
-  - Raposa furry
-  - Nigga Furry
+  - Marcinha
+  - Marcinha
 --- !u!1001 &1331593423387650305
 PrefabInstance:
   m_ObjectHideFlags: 0
