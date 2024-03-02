@@ -11,6 +11,7 @@ public class Dialogue_NPC : MonoBehaviour
     private Sprite Icon;
     public float Radious;
     public string[] txt, names;
+    public AudioClip[] Dialogue_Voices; 
     bool Can_Talk;
     private move MV;
     void Start()
@@ -34,7 +35,7 @@ public class Dialogue_NPC : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space) && Can_Talk && MV.Can_play)
         {
-          DC.Start_Dialogue(txt, names,Icon);
+          DC.Start_Dialogue(txt, names,Dialogue_Voices,Icon);
         }
     }
 

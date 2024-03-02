@@ -13,23 +13,34 @@ public class Dialogue_Control : MonoBehaviour
     [SerializeField]
     Image D_Icon;
     private move MV;
-    
-    AudioClip Dub;
+    private AudioSource D_AudioSource;
+    AudioClip[] Dub;
     int index;
 
     private void Start()
     {
         MV = FindObjectOfType<move>();
+        D_AudioSource = GetComponent<AudioSource>();
     }
 
-    public void Start_Dialogue(string[] txts, string[]n,Sprite Icon)
+    public void Play_Audio(AudioClip clip)
     {
+        D_AudioSource.clip = clip;
+        D_AudioSource.Play();
+    }
+
+    public void Start_Dialogue(string[] txts, string[] n, AudioClip[]D_voice,Sprite Icon)
+    {
+        //Pass the information to the Dialogue Game Object
         index = 0;
         DObj.SetActive(true);
         dialogues = txts;
         names = n;
         D_Icon.sprite = Icon;
         UI_name.text = names[index];
+        Dub = D_voice;
+        //Play the audio and start the text
+        Play_Audio(Dub[index]);
         StartCoroutine(LE());
         if(MV != null)
         {
@@ -37,6 +48,7 @@ public class Dialogue_Control : MonoBehaviour
         }
 
     }
+
     // Letter enumetator
     IEnumerator LE()
     {
@@ -57,7 +69,9 @@ public class Dialogue_Control : MonoBehaviour
                 UI_txt.text = "";
                 UI_name.text = "";
                 index++;
+                D_AudioSource.Stop();
                 UI_name.text = names[index];
+                Play_Audio(Dub[index]);
                 StartCoroutine(LE());
             }
             else
