@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 
 public class Dialogue_Control : MonoBehaviour
-{
+{ 
     public Text UI_txt,UI_name;
     [SerializeField]
     GameObject DObj;
