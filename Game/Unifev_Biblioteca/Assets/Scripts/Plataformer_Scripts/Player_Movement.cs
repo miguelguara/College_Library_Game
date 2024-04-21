@@ -11,7 +11,6 @@ public class Player_Movement : MonoBehaviour
     private Animator anim;
     private bool ground_Check;
     private Rigidbody2D rb;
-    BoxCollider2D bx;
     Vector3 dir;
 
     void Start()
