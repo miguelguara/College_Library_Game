@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -16,7 +17,7 @@ public class Inventory : MonoBehaviour
 
     public void Add_Item(Item item)
     {
-        if(itens.Count < Q_item) 
+        if (itens.Count < Q_item)
         {
             itens.Add(item);
         }
