@@ -12,9 +12,11 @@ public class Dialogue_Control : MonoBehaviour
     string[] dialogues,names;
     [SerializeField]
     Image D_Icon;
+    private Sprite[] D_images;
     private move MV;
     private AudioSource D_AudioSource;
     AudioClip[] Dub;
+    int[]ImageSequences;
     int index;
 
     private void Start()
@@ -36,8 +38,10 @@ public class Dialogue_Control : MonoBehaviour
         DObj.SetActive(true);
         dialogues = txts;
         names = n;
-        D_Icon.sprite = Icon;
+        //D_images = Icon;
+        //ImageSequences = Img_Sequence;
         UI_name.text = names[index];
+        D_Icon.sprite = Icon;
         Dub = D_voice;
         //Play the audio and start the text
         Play_Audio(Dub[index]);
@@ -71,6 +75,7 @@ public class Dialogue_Control : MonoBehaviour
                 index++;
                 D_AudioSource.Stop();
                 UI_name.text = names[index];
+              //  D_Icon.sprite = D_images[ImageSequences[index]];
                 Play_Audio(Dub[index]);
                 StartCoroutine(LE());
             }
@@ -86,6 +91,12 @@ public class Dialogue_Control : MonoBehaviour
                     MV.Can_play = true;
                 }
             }
+        }
+        else
+        {
+            StopAllCoroutines();
+            UI_txt.text = null;
+            UI_txt.text = dialogues[index];
         }
     }
 }
