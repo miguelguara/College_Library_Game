@@ -89,7 +89,7 @@ public class Player_Movement : MonoBehaviour
         Collider2D[] Enemys_col = Physics2D.OverlapCircleAll(Hit_point.position, R_attack, Enemy_Mask); 
         foreach(Collider2D c in  Enemys_col)
         {
-            Destroy(c.gameObject);
+            c.gameObject.GetComponent<Monster>().Die();
         }
     }
 

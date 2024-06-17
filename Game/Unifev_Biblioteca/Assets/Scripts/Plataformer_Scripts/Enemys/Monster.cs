@@ -11,6 +11,7 @@ public class Monster : MonoBehaviour
     public float atackradious;
     private Animator anim;
     private Rigidbody2D rb;
+    private BoxCollider2D bx;
     [SerializeField]
     private LayerMask mask;
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class Monster : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        bx = GetComponent<BoxCollider2D>();
         index = 0;
     }
 
@@ -44,6 +46,14 @@ public class Monster : MonoBehaviour
 
     }
 
+    public void Die()
+    {
+        anim.SetTrigger("Get_Hit");
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        Destroy(way_Points[0].gameObject);
+        Destroy(way_Points[1].gameObject);
+    }
+
     IEnumerator Attack()
     {
         vel = 0;
@@ -66,20 +76,33 @@ public class Monster : MonoBehaviour
         }
     }
 
+    public void Dano()
+    {
+        Collider2D c = Physics2D.OverlapCircle(atack_point.position, atackradious, mask);
+        if (c != null)
+        {
+            c.gameObject.GetComponent<Player_Movement>();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == "Player")
         {
             StartCoroutine(Attack());
         }
-    }
 
-    public void Dano()
-    {
-        Collider2D c = Physics2D.OverlapCircle(atack_point.position, atackradious, mask);
-        if(c != null)
+        if(col.gameObject.tag == "Ground")
         {
-            c.gameObject.GetComponent<Player_Movement>();
+            Debug.Log("tá funcionando");
+            Destroy(rb);
+            Destroy(bx);
+            Destroy(this);
         }
     }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(atack_point.position, atackradious);
+    }
+
 }
