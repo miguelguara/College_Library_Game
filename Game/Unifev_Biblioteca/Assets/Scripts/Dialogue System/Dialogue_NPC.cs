@@ -8,9 +8,10 @@ public class Dialogue_NPC : MonoBehaviour
     private Dialogue_Control DC;
     [Header("Dialogue config.")]
     [SerializeField]
-    private Sprite Icon;
+    private Sprite[] Icons;
     public float Radious;
-    public string[] txt, names;
+    public string[] names,txt;
+    public int[] IMG_indexes;
     public AudioClip[] Dialogue_Voices; 
     bool Can_Talk;
     private move MV;
@@ -35,7 +36,7 @@ public class Dialogue_NPC : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space) && Can_Talk && MV.Can_play)
         {
-          DC.Start_Dialogue(txt, names,Dialogue_Voices,Icon);
+          DC.Start_Dialogue(txt, names,Dialogue_Voices,Icons,IMG_indexes);
         }
     }
 

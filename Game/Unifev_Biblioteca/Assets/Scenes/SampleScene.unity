@@ -22996,8 +22996,8 @@ Transform:
   m_GameObject: {fileID: 2104729793}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.74, y: -0.48, z: 0}
-  m_LocalScale: {x: 2.0607, y: 2.0607, z: 2.0607}
+  m_LocalPosition: {x: 10.64, y: -3.91, z: 0}
+  m_LocalScale: {x: 1.3024833, y: 1.3024833, z: 1.3024833}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -23017,14 +23017,16 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 8
-  Icon: {fileID: 21300000, guid: 3912eebefd254584aa78eeeac8a413de, type: 3}
+  Icons:
+  - {fileID: 21300000, guid: f0e96bf1ac0d8ba49b4282d0bbeac398, type: 3}
   Radious: 1.69
-  txt:
-  - sistema de dialogo aprimorado kkkkkkkkkkkkkkk
-  - "Oi meu nome \xE9 marcinha e seja bem vindo a Unifev!"
   names:
   - Marcinha
   - Marcinha
+  txt:
+  - sistema de dialogo aprimorado kkkkkkkkkkkkkkk
+  - "Oi meu nome \xE9 marcinha e seja bem vindo a Unifev!"
+  IMG_indexes: 0000000000000000
   Dialogue_Voices:
   - {fileID: 8300000, guid: e98d94f57a27b9f4f8b28f288cbdb8a0, type: 3}
   - {fileID: 8300000, guid: e98d94f57a27b9f4f8b28f288cbdb8a0, type: 3}
