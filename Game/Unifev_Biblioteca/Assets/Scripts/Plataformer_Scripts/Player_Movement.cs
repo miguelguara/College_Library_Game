@@ -8,6 +8,7 @@ public class Player_Movement : MonoBehaviour
     public float Velocity;
     public float Velocity_on_Air;
     public float Jump_Force;
+    public int Life;
     private Animator anim;
     private bool ground_Check;
     private Rigidbody2D rb;
@@ -63,6 +64,12 @@ public class Player_Movement : MonoBehaviour
 
         flip();
         Jump();
+    }
+
+    public void Take_Hit(int damage)
+    {
+        Life-= damage;
+        anim.SetTrigger("Hit");
     }
 
     void Jump()

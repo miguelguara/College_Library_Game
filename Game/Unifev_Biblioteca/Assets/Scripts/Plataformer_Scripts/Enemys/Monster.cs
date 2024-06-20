@@ -81,7 +81,7 @@ public class Monster : MonoBehaviour
         Collider2D c = Physics2D.OverlapCircle(atack_point.position, atackradious, mask);
         if (c != null)
         {
-            c.gameObject.GetComponent<Player_Movement>();
+            c.gameObject.GetComponent<Player_Movement>().Take_Hit(1);
         }
     }
 
@@ -94,7 +94,6 @@ public class Monster : MonoBehaviour
 
         if(col.gameObject.tag == "Ground")
         {
-            Debug.Log("tá funcionando");
             Destroy(rb);
             Destroy(bx);
             Destroy(this);
