@@ -16,11 +16,14 @@ public class Meelee_Enemy : MonoBehaviour
     private Transform Player_Pos;
     [SerializeField]
     private Transform Attack_Point;
-    bool  can_attack, Follow;
+    bool Follow;
+    //detect the trigger;
+     public Collision_ME CME;
 
 
     void Start()
     {
+        CME = GetComponentInChildren<Collision_ME>();
         rb = GetComponent<Rigidbody2D>();
         caps = GetComponent<CapsuleCollider2D>();
         anim = GetComponent<Animator>();
@@ -30,21 +33,52 @@ public class Meelee_Enemy : MonoBehaviour
     void Update()
     {
         Follow = Physics2D.OverlapCircle(transform.position,follow_Range,Mask);
-        can_attack = Physics2D.OverlapCircle(transform.position, attack_Range, Mask);
         if(Follow && Speed>0)
         {
-            Move(); 
+            Move();
+            anim.SetBool("Speed", true);
         }
+        else
+        {
+            anim.SetBool("Speed", false);
+        }
+
+        if (CME.Can_attack == true)
+        {
+            StartCoroutine(Attack());
+        }
+     
     }
 
     IEnumerator Attack()
     {
-        can_attack = false;
+        CME.Can_attack = false;
         Speed = 0;
         anim.SetBool("Attack",true);
         yield return new WaitForSeconds(1f);
         anim.SetBool("Attack",false);
+        yield return new WaitForSeconds(1f);
         StartCoroutine(Attack());
+    }
+
+    public void FollowAgain()
+    {
+
+        StopAllCoroutines();
+        StartCoroutine(FA());
+    }
+    public IEnumerator FA()
+    {
+        anim.SetBool("Attack",false);
+        yield return new WaitForSeconds(2f);
+        anim.SetBool("Speed", true);
+        Speed = 4;
+    }
+
+    IEnumerator GetHit()
+    {
+        anim.SetTrigger("Hit");
+        yield return new WaitForSeconds(1f);
     }
     
     void Move()
@@ -59,7 +93,11 @@ public class Meelee_Enemy : MonoBehaviour
         }
 
         transform.position = Vector2.MoveTowards(transform.position,Player_Pos.position,Speed * Time.deltaTime);
-        anim.SetFloat("Speed",Speed);
     }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(Attack_Point.position,attack_Range);
+        Gizmos.DrawWireSphere(transform.position, follow_Range);
+    }
 }
