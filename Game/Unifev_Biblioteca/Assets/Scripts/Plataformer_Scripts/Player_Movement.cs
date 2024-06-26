@@ -79,6 +79,7 @@ public class Player_Movement : MonoBehaviour
             rb.AddForce(Vector3.up * Jump_Force, ForceMode2D.Impulse);
         }
     }
+
     void flip()
     {
         if(dir.x > 0)
@@ -96,7 +97,15 @@ public class Player_Movement : MonoBehaviour
         Collider2D[] Enemys_col = Physics2D.OverlapCircleAll(Hit_point.position, R_attack, Enemy_Mask); 
         foreach(Collider2D c in  Enemys_col)
         {
-            c.gameObject.GetComponent<Monster>().Die();
+            if(c.tag == "Monster")
+            {
+              c.gameObject.GetComponent<Monster>().Die();
+            }
+            else if(c.tag == "MM")
+            {
+                c.gameObject.GetComponent<Meelee_Enemy>().Get_Hit(1);
+            }
+          
         }
     }
 

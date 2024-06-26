@@ -9,6 +9,8 @@ public class Dialogue_Control : MonoBehaviour
     public Text UI_txt,UI_name;
     [SerializeField]
     GameObject DObj;
+    private AudioSource Music_Source;
+    private float music_volume;
     string[] dialogues,names;
     [SerializeField]
      Image D_Icon;
@@ -21,6 +23,7 @@ public class Dialogue_Control : MonoBehaviour
 
     private void Start()
     {
+        Music_Source = GameObject.Find("Music_Player").GetComponent<AudioSource>();
         MV = FindObjectOfType<move>();
         D_AudioSource = GetComponent<AudioSource>();
     }
@@ -43,6 +46,11 @@ public class Dialogue_Control : MonoBehaviour
         UI_name.text = names[index];
         D_Icon.sprite = D_images[ImageSequences[index]];
         Dub = D_voice;
+
+        //Set the Music volume down
+         music_volume = Music_Source.volume;
+         Music_Source.volume -= 0.07f;
+
         //Play the audio and start the text
         Play_Audio(Dub[index]);
         StartCoroutine(LE());
@@ -74,7 +82,7 @@ public class Dialogue_Control : MonoBehaviour
                 UI_name.text = "";
                 index++;
                 D_AudioSource.Stop();
-                UI_name.text = names[index];
+                UI_name.text = names[ImageSequences[index]];
                 D_Icon.sprite = D_images[ImageSequences[index]];
                 Play_Audio(Dub[index]);
                 StartCoroutine(LE());
@@ -92,6 +100,8 @@ public class Dialogue_Control : MonoBehaviour
                 {
                     MV.Can_play = true;
                 }
+
+                Music_Source.volume = music_volume;
             }
         }
         else

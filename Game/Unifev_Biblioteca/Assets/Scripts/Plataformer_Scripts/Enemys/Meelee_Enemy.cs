@@ -6,12 +6,12 @@ using UnityEngine;
 public class Meelee_Enemy : MonoBehaviour
 {
     [Header("Configurações")]
+    //enemy configs
+    public int Life;
     [SerializeField]
     private float Speed;
     public float attack_Range, follow_Range;
     public LayerMask Mask;
-    private Rigidbody2D rb;
-    private CapsuleCollider2D caps;
     private Animator anim;
     private Transform Player_Pos;
     [SerializeField]
@@ -24,8 +24,6 @@ public class Meelee_Enemy : MonoBehaviour
     void Start()
     {
         CME = GetComponentInChildren<Collision_ME>();
-        rb = GetComponent<Rigidbody2D>();
-        caps = GetComponent<CapsuleCollider2D>();
         anim = GetComponent<Animator>();
         Player_Pos = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
@@ -75,12 +73,36 @@ public class Meelee_Enemy : MonoBehaviour
         Speed = 4;
     }
 
-    IEnumerator GetHit()
+    public void Get_Hit(int DMG)
+    {
+        StartCoroutine(GetHit(DMG));
+    }
+
+    IEnumerator GetHit(int dmg)
     {
         anim.SetTrigger("Hit");
-        yield return new WaitForSeconds(1f);
+        Life-=dmg;
+        yield return new WaitForSeconds(1.5f);
+        if(Life <= 0)
+        {
+            Destroy(gameObject, 1f);
+        }
+        if (Vector2.Distance(transform.position, Player_Pos.position) < 2f)
+        {
+            CME.Can_attack = true;
+        }
+    }
+
+    void Damege()
+    {
+        Collider2D c = Physics2D.OverlapCircle(Attack_Point.position, attack_Range, Mask);
+        if(c != null)
+        {
+            c.gameObject.GetComponent<Player_Movement>().Take_Hit(2);
+        }
     }
     
+
     void Move()
     {
         if(Player_Pos.position.x < transform.position.x)
