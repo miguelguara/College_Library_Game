@@ -2203,8 +2203,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 4
-  attack_Range: 1.39
-  follow_Range: 5.18
+  attack_Range: 0.95
+  follow_Range: 3.71
   Mask:
     serializedVersion: 2
     m_Bits: 8
