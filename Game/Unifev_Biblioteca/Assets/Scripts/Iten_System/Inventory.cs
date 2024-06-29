@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour
     public int Q_item;
     public List<Item> itens = new List<Item>();
     UI_Update UI_p;
+
     private void Awake()
     {
         IV = this;

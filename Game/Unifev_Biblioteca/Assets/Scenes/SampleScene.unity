@@ -23159,11 +23159,11 @@ MonoBehaviour:
   - Contudo espero que goste de sua leitura e tenha um excelente dia.
   IMG_indexes: 0000000000000000000000000000000000000000
   Dialogue_Voices:
-  - {fileID: 8300000, guid: e98d94f57a27b9f4f8b28f288cbdb8a0, type: 3}
-  - {fileID: 8300000, guid: e98d94f57a27b9f4f8b28f288cbdb8a0, type: 3}
-  - {fileID: 8300000, guid: e98d94f57a27b9f4f8b28f288cbdb8a0, type: 3}
-  - {fileID: 8300000, guid: e98d94f57a27b9f4f8b28f288cbdb8a0, type: 3}
-  - {fileID: 8300000, guid: e98d94f57a27b9f4f8b28f288cbdb8a0, type: 3}
+  - {fileID: 8300000, guid: 33ee4259530e345499fca3669d3a04f2, type: 3}
+  - {fileID: 8300000, guid: abefc34a0d9e186408ddf3ac308d2859, type: 3}
+  - {fileID: 8300000, guid: 246c1a0e7b8737841933c6491c18dbcc, type: 3}
+  - {fileID: 8300000, guid: ee317b12e2290f94d8498f04165de321, type: 3}
+  - {fileID: 8300000, guid: a84028736c866bd4cbf2511b19ee9946, type: 3}
 --- !u!1001 &1331593423387650305
 PrefabInstance:
   m_ObjectHideFlags: 0

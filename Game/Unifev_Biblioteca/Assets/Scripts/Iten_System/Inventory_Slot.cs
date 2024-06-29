@@ -13,6 +13,7 @@ public class Inventory_Slot : MonoBehaviour
     public void fill_Slot(Item item)
     {
         it = item;
+        Icon.enabled = true;
         Icon.sprite = it.sp;
         ItemOBj = it.go;
     }
@@ -20,6 +21,7 @@ public class Inventory_Slot : MonoBehaviour
     public void Clear_Slot()
     {
         Icon.sprite = null;
+        Icon.enabled = false;
         ItemOBj = null;
     }
 
