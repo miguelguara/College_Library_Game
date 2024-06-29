@@ -67,7 +67,7 @@ public class Dialogue_Control : MonoBehaviour
         foreach(char lt in dialogues[index].ToCharArray())
         {
             UI_txt.text += lt;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.04f);
         }
     }
 
