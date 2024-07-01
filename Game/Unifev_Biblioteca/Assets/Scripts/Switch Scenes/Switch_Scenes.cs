@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class Switch_Scenes : MonoBehaviour
 {
     [SerializeField]
-    string _scenesName;
+    private string _scenesName;
     public float Raio;
     private bool Can;
     public GameObject UI;
@@ -16,10 +16,6 @@ public class Switch_Scenes : MonoBehaviour
     [SerializeField]
     LayerMask mask;
 
-    private void Start()
-    {
-      UI_Scene_Name.text = "Precione 'E' para entrar na fase: "+_scenesName;
-    }
     private void Update()
     {
         Can = Physics2D.OverlapCircle(transform.position, Raio,mask);
