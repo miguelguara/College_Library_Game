@@ -18371,8 +18371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scenesName: Plataforma
   Raio: 1
-  UI: {fileID: 974756184}
-  UI_Scene_Name: {fileID: 1552483466}
+  UI: {fileID: 2007105298}
   mask:
     serializedVersion: 2
     m_Bits: 8
@@ -18468,17 +18467,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1659744824}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &643532318 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2686678977958486786, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-  m_PrefabInstance: {fileID: 1331593423387650305}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &682539142
 GameObject:
   m_ObjectHideFlags: 0
@@ -18547,11 +18535,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &974756184 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3519728592888471183, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-  m_PrefabInstance: {fileID: 1331593423387650305}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &975413065
 GameObject:
   m_ObjectHideFlags: 0
@@ -18724,6 +18707,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1330581811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3959986843563168383, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+  m_PrefabInstance: {fileID: 1331593423387650305}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1403736057
 GameObject:
   m_ObjectHideFlags: 0
@@ -20900,17 +20888,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!114 &1552483466 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2558479245425161205, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-  m_PrefabInstance: {fileID: 1331593423387650305}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1631239806
 GameObject:
   m_ObjectHideFlags: 0
@@ -22994,6 +22971,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2007105298 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6199551393939658023, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+  m_PrefabInstance: {fileID: 1331593423387650305}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2072041763
 GameObject:
   m_ObjectHideFlags: 0
@@ -23040,8 +23022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scenesName: PuzzleGame
   Raio: 1
-  UI: {fileID: 974756184}
-  UI_Scene_Name: {fileID: 643532318}
+  UI: {fileID: 1330581811}
   mask:
     serializedVersion: 2
     m_Bits: 8
@@ -23203,6 +23184,10 @@ PrefabInstance:
     - target: {fileID: 2546096721345025731, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_Color.r
       value: 0.9433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959986843563168383, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5394164814105658186, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_AnchoredPosition.x

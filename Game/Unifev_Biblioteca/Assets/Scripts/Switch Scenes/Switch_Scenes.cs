@@ -12,7 +12,6 @@ public class Switch_Scenes : MonoBehaviour
     public float Raio;
     private bool Can;
     public GameObject UI;
-    public Text UI_Scene_Name;
     [SerializeField]
     LayerMask mask;
 
@@ -21,7 +20,7 @@ public class Switch_Scenes : MonoBehaviour
         Can = Physics2D.OverlapCircle(transform.position, Raio,mask);
         if (Can)
         {
-            UI_Scene_Name.gameObject.SetActive(true);
+            UI.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
                 SceneManager.LoadScene(_scenesName);
@@ -29,7 +28,7 @@ public class Switch_Scenes : MonoBehaviour
         }
         else
         {
-            UI_Scene_Name.gameObject.SetActive(false);
+            UI.gameObject.SetActive(false);
         }
     }
 

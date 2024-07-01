@@ -15,16 +15,17 @@ public class Dialogue_Control : MonoBehaviour
     [SerializeField]
      Image D_Icon;
     private Sprite[] D_images;
-    private move MV;
     private AudioSource D_AudioSource;
     AudioClip[] Dub;
     int[]ImageSequences;
     int index;
+    [HideInInspector]
+    public bool Can_Move;
 
     private void Start()
     {
         Music_Source = GameObject.Find("Music_Player").GetComponent<AudioSource>();
-        MV = FindObjectOfType<move>();
+       Can_Move = true;
         D_AudioSource = GetComponent<AudioSource>();
     }
 
@@ -54,10 +55,7 @@ public class Dialogue_Control : MonoBehaviour
         //Play the audio and start the text
         Play_Audio(Dub[index]);
         StartCoroutine(LE());
-        if(MV != null)
-        {
-            MV.Can_play = false;
-        }
+        Can_Move = false;
 
     }
 
@@ -96,11 +94,8 @@ public class Dialogue_Control : MonoBehaviour
                 index = 0;
                 UI_txt.text = "";
                 DObj.SetActive (false);
-                if(MV != null)
-                {
-                    MV.Can_play = true;
-                }
-
+            
+                Can_Move=true;
                 Music_Source.volume = music_volume;
             }
         }

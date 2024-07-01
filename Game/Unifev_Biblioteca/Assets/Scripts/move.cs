@@ -6,20 +6,20 @@ public class move : MonoBehaviour
 {
     [SerializeField]
     float Speed;
-    public bool Can_play;
+    private Dialogue_Control DC;
     private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-     Can_play = true;
      anim = GetComponent<Animator>();
+     DC = FindObjectOfType<Dialogue_Control>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector3 dr = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0f).normalized;
-        if (Can_play)
+        if (DC.Can_Move)
         {
             anim.SetFloat("Speed", dr.magnitude);
             anim.SetFloat("H", dr.x);

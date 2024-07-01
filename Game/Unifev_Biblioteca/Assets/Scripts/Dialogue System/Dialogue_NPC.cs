@@ -34,7 +34,7 @@ public class Dialogue_NPC : MonoBehaviour
             Can_Talk = false;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && Can_Talk && MV.Can_play)
+        if(Input.GetKeyDown(KeyCode.Space) && Can_Talk && DC.Can_Move)
         {
           DC.Start_Dialogue(txt, names,Dialogue_Voices,Icons,IMG_indexes);
         }
