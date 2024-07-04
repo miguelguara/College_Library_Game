@@ -22854,7 +22854,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
-  Can_play: 0
 --- !u!212 &1659744823
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23153,62 +23152,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 16748075591645414, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 248334287493740336, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2188882284888151499, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2419892412691428261, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2546096721345025731, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2546096721345025731, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: m_Color.b
-      value: 0.37148273
-      objectReference: {fileID: 0}
-    - target: {fileID: 2546096721345025731, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: m_Color.g
-      value: 0.012459901
-      objectReference: {fileID: 0}
-    - target: {fileID: 2546096721345025731, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9433962
-      objectReference: {fileID: 0}
-    - target: {fileID: 3959986843563168383, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5394164814105658186, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -28.946777
-      objectReference: {fileID: 0}
-    - target: {fileID: 5394164814105658186, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 10.526123
-      objectReference: {fileID: 0}
-    - target: {fileID: 6321857257861069478, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: Priority
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6321857257861069478, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: m_Volume
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6321857257861069478, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
-      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7102441094761517497, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.77

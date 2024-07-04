@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6293930403633851404}
   m_Layer: 0
   m_Name: Monster Preefab
-  m_TagString: Monster
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 5075934301030974781}
   m_Layer: 6
   m_Name: Monstro
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

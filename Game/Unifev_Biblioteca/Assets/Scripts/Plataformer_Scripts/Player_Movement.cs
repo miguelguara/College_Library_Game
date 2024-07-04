@@ -9,6 +9,7 @@ public class Player_Movement : MonoBehaviour
     public float Velocity_on_Air;
     public float Jump_Force;
     public int Life;
+    public int DamegeOnEnemy;
     private Animator anim;
     private bool ground_Check;
     private Rigidbody2D rb;
@@ -103,7 +104,7 @@ public class Player_Movement : MonoBehaviour
             }
             else if(c.tag == "MM")
             {
-                c.gameObject.GetComponent<Meelee_Enemy>().Get_Hit(1);
+                c.gameObject.GetComponent<Meelee_Enemy>().Get_Hit(DamegeOnEnemy);
             }
           
         }

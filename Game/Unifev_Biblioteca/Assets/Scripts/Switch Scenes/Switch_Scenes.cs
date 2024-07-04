@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 public class Switch_Scenes : MonoBehaviour
@@ -14,22 +11,43 @@ public class Switch_Scenes : MonoBehaviour
     public GameObject UI;
     [SerializeField]
     LayerMask mask;
+    private Animator anim;
+    private bool click_Again;
+
+    private void Start()
+    {
+        anim = GameObject.Find("Transition").GetComponent<Animator>();
+        click_Again = true;
+    }
 
     private void Update()
     {
         Can = Physics2D.OverlapCircle(transform.position, Raio,mask);
         if (Can)
         {
-            UI.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E))
+            if(click_Again)
             {
-                SceneManager.LoadScene(_scenesName);
+                UI.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    StartCoroutine(Switch());
+                    click_Again=false;
+                }
             }
         }
         else
         {
             UI.gameObject.SetActive(false);
         }
+    }
+
+    IEnumerator Switch()
+    {
+        UI.SetActive(false);
+        anim.SetBool("Transition",true);
+        yield return new WaitForSeconds(1.2f);
+        SceneManager.LoadScene(_scenesName);
+
     }
 
     private void OnDrawGizmos()

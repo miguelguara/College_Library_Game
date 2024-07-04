@@ -80,16 +80,17 @@ public class Meelee_Enemy : MonoBehaviour
 
     IEnumerator GetHit(int dmg)
     {
+        anim.SetBool("Attack", false);
         anim.SetTrigger("Hit");
         Life-=dmg;
-        yield return new WaitForSeconds(1.5f);
         if(Life <= 0)
         {
             Destroy(gameObject, 1f);
         }
+        yield return new WaitForSeconds(1.6f);
         if (Vector2.Distance(transform.position, Player_Pos.position) < 2f)
         {
-            CME.Can_attack = true;
+            StartCoroutine(Attack());
         }
     }
 

@@ -19,14 +19,15 @@ public class Camera_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 pos = new Vector3(Player_pos.position.x,transform.position.y,transform.position.z);
      if(Vector3.Distance(transform.position, Player_pos.position) > 7f)
         {
-            transform.position = Vector3.MoveTowards(transform.position,Player_pos.position, FarSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position,pos, FarSpeed * Time.deltaTime);
         }
      else if(Vector3.Distance(transform.position, Player_pos.position) < 7f)
         {
 
-            transform.position = Vector3.MoveTowards(transform.position, Player_pos.position, CloseSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, pos, CloseSpeed * Time.deltaTime);
         }
     }
 }

@@ -15,7 +15,7 @@ public class Puzzle_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     Vector2 move_input = new Vector2 (Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+     Vector2 move_input = new Vector2 (Input.GetAxisRaw("Horizontal"),0f);
      transform.Translate(move_input * speed * Time.deltaTime, Space.World);
      flip(move_input);
     }
