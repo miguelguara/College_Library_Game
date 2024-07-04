@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4ed3ffabd030b1f479d9e60644b044c1
+guid: f9fb05b08550ff34184be31566fb92ea
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -94,19 +94,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -123,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle CHAR SPRITE 32pxls_0
+      name: Spritesheet idle Detetive_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1300
-        height: 1550
+        width: 2607
+        height: 2954
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cca6886c4576ae4e8ca9d10b6b8b490
-      internalID: 523126703
+      spriteID: 852528d74aa84c34fb0ed92dd83b2073
+      internalID: 1280868218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle CHAR SPRITE 32pxls_1
+      name: Spritesheet idle Detetive_1
       rect:
         serializedVersion: 2
-        x: 1300
+        x: 2648
         y: 0
-        width: 1300
-        height: 1550
+        width: 2606
+        height: 2954
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7021014e378497346a7dbf3827fcdaf6
-      internalID: 426945828
+      spriteID: 7ed475fa222c4a248b275f88c7b9ac85
+      internalID: 2000404901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle CHAR SPRITE 32pxls_2
+      name: Spritesheet idle Detetive_2
       rect:
         serializedVersion: 2
-        x: 2600
+        x: 5296
         y: 0
-        width: 1300
-        height: 1550
+        width: 2560
+        height: 3000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79b86ddb0e20cec469989abaee9fcb83
-      internalID: -1141193749
+      spriteID: efabb3d42735aad4cbf4a3e13513c33a
+      internalID: 1886527883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle CHAR SPRITE 32pxls_3
+      name: Spritesheet idle Detetive_3
       rect:
         serializedVersion: 2
-        x: 3900
+        x: 7943
         y: 0
-        width: 1300
-        height: 1550
+        width: 2607
+        height: 3000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,71 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 968e8caa4eea46c40911eadef533529b
-      internalID: 2115816534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle CHAR SPRITE 32pxls_4
-      rect:
-        serializedVersion: 2
-        x: 5200
-        y: 0
-        width: 1300
-        height: 1550
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3fe71682abe23d148a0c7d2381506a21
-      internalID: -1859470411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle CHAR SPRITE 32pxls_5
-      rect:
-        serializedVersion: 2
-        x: 6500
-        y: 0
-        width: 1300
-        height: 1550
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 347aa5e3da50e2441bceb0c377657f30
-      internalID: -782718688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle CHAR SPRITE 32pxls_6
-      rect:
-        serializedVersion: 2
-        x: 7800
-        y: 0
-        width: 1300
-        height: 1550
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1a3974bda8e8f24d8f936f5b7c98799
-      internalID: 1392890324
+      spriteID: 101ed897d24037c46a68b0d9ed217ec6
+      internalID: -932288240
       vertices: []
       indices: 
       edges: []
@@ -280,13 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle CHAR SPRITE 32pxls_0: 523126703
-      idle CHAR SPRITE 32pxls_1: 426945828
-      idle CHAR SPRITE 32pxls_2: -1141193749
-      idle CHAR SPRITE 32pxls_3: 2115816534
-      idle CHAR SPRITE 32pxls_4: -1859470411
-      idle CHAR SPRITE 32pxls_5: -782718688
-      idle CHAR SPRITE 32pxls_6: 1392890324
+      Spritesheet idle Detetive_0: 1280868218
+      Spritesheet idle Detetive_1: 2000404901
+      Spritesheet idle Detetive_2: 1886527883
+      Spritesheet idle Detetive_3: -932288240
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
