@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
@@ -25,7 +24,7 @@ public class Dialogue_Control : MonoBehaviour
     private void Start()
     {
         Music_Source = GameObject.Find("Music_Player").GetComponent<AudioSource>();
-       Can_Move = true;
+        Can_Move = true;
         D_AudioSource = GetComponent<AudioSource>();
     }
 
@@ -94,7 +93,7 @@ public class Dialogue_Control : MonoBehaviour
                 index = 0;
                 UI_txt.text = "";
                 DObj.SetActive (false);
-            
+                D_AudioSource.Stop();
                 Can_Move=true;
                 Music_Source.volume = music_volume;
             }
