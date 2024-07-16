@@ -6,7 +6,7 @@ public class Angel_Controller : MonoBehaviour
     [SerializeField]
     private GameObject Ring;
     public Transform Ring_pos;
-   void Right_Stone()
+   public void Right_Stone()
     {
         count++;
         if(count == 2)

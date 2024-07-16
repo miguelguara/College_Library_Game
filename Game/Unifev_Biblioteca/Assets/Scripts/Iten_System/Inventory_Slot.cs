@@ -8,7 +8,11 @@ public class Inventory_Slot : MonoBehaviour
     Item it;
     public Image Icon;
     GameObject ItemOBj;
-    Transform playerPO;
+    Transform Inst_pos;
+    private void Awake()
+    {
+      Inst_pos = GameObject.Find("Drop_obj").GetComponent<Transform>();
+    }
 
     public void fill_Slot(Item item)
     {
@@ -29,7 +33,7 @@ public class Inventory_Slot : MonoBehaviour
     {
         if (ItemOBj != null)
         {
-            Instantiate(ItemOBj);
+            Instantiate(ItemOBj,Inst_pos.position,Quaternion.identity);
             Inventory.IV.Remove_Item(it);
         }
     }
