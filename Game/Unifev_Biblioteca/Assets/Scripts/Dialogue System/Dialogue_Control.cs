@@ -49,7 +49,7 @@ public class Dialogue_Control : MonoBehaviour
 
         //Set the Music volume down
          music_volume = Music_Source.volume;
-         Music_Source.volume -= 0.07f;
+         Music_Source.volume = (Music_Source.volume/3f);
 
         //Play the audio and start the text
         Play_Audio(Dub[index]);
