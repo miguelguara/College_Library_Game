@@ -14,7 +14,6 @@ public class Player_Movement : MonoBehaviour
     private bool ground_Check;
     private Rigidbody2D rb;
 
-
     [Header("Radious of attack, enemys layer")]
     public float R_attack;
     public float Attack_Cooldown;
