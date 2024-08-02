@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class Puzzle_movement : MonoBehaviour
 {
     [SerializeField]
     private float speed;
     private Animator anim;
+    NavMeshAgent agent;
     void Start()
     {
      anim = GetComponent<Animator>();
@@ -32,5 +33,5 @@ public class Puzzle_movement : MonoBehaviour
             transform.eulerAngles = Vector3.zero;
             }
         }
-    
+
 }
