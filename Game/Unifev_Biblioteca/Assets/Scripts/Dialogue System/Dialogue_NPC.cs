@@ -24,21 +24,14 @@ public class Dialogue_NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Collider2D c = Physics2D.OverlapCircle(transform.position,Radious,mask);
-        if(c != null)
-        {
-            Can_Talk = true;
-        }
-        else
-        {
-            Can_Talk = false;
-        }
+       Can_Talk = Physics2D.OverlapCircle(transform.position,Radious,mask);
+       
 
-        if(Input.GetKeyDown(KeyCode.Space) && Can_Talk && DC.Can_Move)
+        if(Input.GetKeyDown(KeyCode.E) && Can_Talk && DC.Can_Move)
         {
           DC.Start_Dialogue(txt, names,Dialogue_Voices,Icons,IMG_indexes);
         }
-        else if(Input.GetKeyDown(KeyCode.Space) && Can_Talk && !DC.Can_Move)
+        else if(Input.GetKeyDown(KeyCode.E) && Can_Talk && !DC.Can_Move)
         {
             DC.NextDialogue();
         }
