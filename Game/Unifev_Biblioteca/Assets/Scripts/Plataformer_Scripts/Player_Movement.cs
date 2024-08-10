@@ -34,7 +34,7 @@ public class Player_Movement : MonoBehaviour
 
     void Update()
     {
-        dir = new Vector2 (Input.GetAxisRaw("Horizontal"),0f);
+        dir = new Vector2 (Input.GetAxis("Horizontal"),0f);
         //set animations
         anim.SetFloat("Speed",dir.magnitude);
         anim.SetBool("Ground",ground_Check);
@@ -127,4 +127,5 @@ public class Player_Movement : MonoBehaviour
             ground_Check = false;
         }
     }
+
 }
