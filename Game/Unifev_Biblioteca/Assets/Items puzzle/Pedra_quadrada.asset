@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e58d0835cd84648af4fd58d71748fa, type: 3}
   m_Name: Pedra_quadrada
   m_EditorClassIdentifier: 
-  sp: {fileID: 0}
-  go: {fileID: 0}
+  sp: {fileID: -1925053526, guid: 4a801592bafe62f4a878523f5ef6d815, type: 3}
+  go: {fileID: 9182981826256269022, guid: 587db1e3cd6d6d34b924a7448f95c0c9, type: 3}

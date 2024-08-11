@@ -40,16 +40,16 @@ public class Player_Movement : MonoBehaviour
         anim.SetBool("Ground",ground_Check);
         anim.SetFloat("Air_Speed",rb.velocity.y);
 
-        if(ground_Check)
+        Attack_timer -= Time.deltaTime;
+
+        if (ground_Check)
         {
             transform.position += dir * Velocity * Time.deltaTime;
         }
-        else
+        else 
         {
-            transform.position += dir * Velocity_on_Air * Time.deltaTime;
+            transform.position += dir * Velocity * Time.deltaTime;
         }
-
-        Attack_timer -= Time.deltaTime;
 
         if(Attack_timer < -50)
         {
@@ -65,6 +65,7 @@ public class Player_Movement : MonoBehaviour
         flip();
         Jump();
     }
+ 
 
     public void Take_Hit(int damage)
     {
@@ -90,6 +91,7 @@ public class Player_Movement : MonoBehaviour
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
         }
     }
+  
 
     void Attack()
     {

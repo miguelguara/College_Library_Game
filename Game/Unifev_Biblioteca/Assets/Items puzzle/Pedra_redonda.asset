@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e58d0835cd84648af4fd58d71748fa, type: 3}
   m_Name: Pedra_redonda
   m_EditorClassIdentifier: 
-  sp: {fileID: 0}
-  go: {fileID: 0}
+  sp: {fileID: 217167459, guid: 4a801592bafe62f4a878523f5ef6d815, type: 3}
+  go: {fileID: 8591557242411170476, guid: 629d511c56f148f41a1c7dd5df1387b1, type: 3}

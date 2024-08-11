@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Password_Holder : MonoBehaviour
 {
-    public GameObject item;
+    public GameObject[] item;
     bool open = false;
     Code_Controler code_controler;
     [SerializeField] int c1, c2, c3;
@@ -22,7 +22,10 @@ public class Password_Holder : MonoBehaviour
         if(open)
         {
             ph.enabled = false;
-            Instantiate(item,new Vector3(transform.position.x,transform.position.y +1f,0f),Quaternion.identity);
+            foreach (GameObject g in item)
+            {
+                Instantiate(g, new Vector3(transform.position.x, transform.position.y + 1f, 0f), Quaternion.identity);
+            }
         }
     }
 
