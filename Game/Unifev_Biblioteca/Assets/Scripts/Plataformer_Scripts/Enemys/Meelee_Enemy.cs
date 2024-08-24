@@ -17,8 +17,12 @@ public class Meelee_Enemy : MonoBehaviour
     [SerializeField]
     private Transform Attack_Point;
     bool Follow;
+    private SpriteRenderer SR;
     //detect the trigger;
      public Collision_ME CME;
+
+    // swich the collors
+    public Color[] c;
 
 
     void Start()
@@ -26,6 +30,7 @@ public class Meelee_Enemy : MonoBehaviour
         CME = GetComponentInChildren<Collision_ME>();
         anim = GetComponent<Animator>();
         Player_Pos = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        SR = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -82,6 +87,9 @@ public class Meelee_Enemy : MonoBehaviour
     {
         anim.SetBool("Attack", false);
         anim.SetTrigger("Hit");
+        SR.color = c[0];
+        yield return new WaitForSeconds(0.2f);
+        SR.color = c[1];
         Life-=dmg;
         if(Life <= 0)
         {
@@ -114,8 +122,8 @@ public class Meelee_Enemy : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0f, 0f, 0f);
         }
-
-        transform.position = Vector2.MoveTowards(transform.position,Player_Pos.position,Speed * Time.deltaTime);
+        Vector3 follow_Pos = new Vector3(Player_Pos.position.x,transform.position.y,0f);
+        transform.position = Vector2.MoveTowards(transform.position,follow_Pos,Speed * Time.deltaTime);
     }
 
     private void OnDrawGizmos()

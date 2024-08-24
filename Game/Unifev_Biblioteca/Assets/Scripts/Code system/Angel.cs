@@ -18,6 +18,7 @@ public class Angel : MonoBehaviour
         if(col.tag == Stone_name)
         {
             AC.Right_Stone();
+            Destroy(col.gameObject);
         }
     }
 }

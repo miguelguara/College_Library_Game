@@ -22,10 +22,8 @@ public class Password_Holder : MonoBehaviour
         if(open)
         {
             ph.enabled = false;
-            foreach (GameObject g in item)
-            {
-                Instantiate(g, new Vector3(transform.position.x, transform.position.y + 1f, 0f), Quaternion.identity);
-            }
+            Instantiate(item[0], new Vector3(transform.position.x-1f, transform.position.y + 1f, 0f), Quaternion.identity);
+            Instantiate(item[1], new Vector3(transform.position.x + 1f, transform.position.y + 1f, 0f), Quaternion.identity);
         }
     }
 

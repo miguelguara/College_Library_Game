@@ -23,6 +23,9 @@ public class Code_Controler : MonoBehaviour
     {
         Code_Obj.SetActive(true);
         N1 = 0; N2 = 0;N3 = 0;
+        Ntx1.text = N1.ToString();
+        Ntx2.text = N2.ToString();
+        Ntx3.text = N3.ToString();
     }
 
     public void N1_Cima()
@@ -54,7 +57,7 @@ public class Code_Controler : MonoBehaviour
         if (N2 > 9)
         {
             N2 = 0;
-            Ntx2.text = N2.ToString();
+            Ntx1.text = N1.ToString();
         }
     }
 
@@ -89,5 +92,10 @@ public class Code_Controler : MonoBehaviour
             N3 = 9;
             Ntx3.text = N3.ToString();
         }
+    }
+
+    public void Desativar_Puzzle()
+    {
+       Code_Obj.SetActive(false);
     }
 }
