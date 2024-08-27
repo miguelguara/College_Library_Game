@@ -87,13 +87,13 @@ public class Meelee_Enemy : MonoBehaviour
     {
         anim.SetBool("Attack", false);
         anim.SetTrigger("Hit");
-        SR.color = c[0];
+       // SR.color = c[0];
         yield return new WaitForSeconds(0.2f);
-        SR.color = c[1];
+       // SR.color = c[1];
         Life-=dmg;
         if(Life <= 0)
         {
-            Destroy(gameObject, 1f);
+            Destroy(gameObject);
         }
         yield return new WaitForSeconds(1.6f);
         if (Vector2.Distance(transform.position, Player_Pos.position) < 2f)
