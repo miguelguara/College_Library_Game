@@ -44,11 +44,11 @@ public class Player_Movement : MonoBehaviour
 
         if (ground_Check)
         {
-           rb.AddForce(dir * Velocity,ForceMode2D.Impulse);
+            transform.position += dir * Velocity * Time.deltaTime;
         }
         else 
         {
-            rb.AddForce(dir * Velocity_on_Air, ForceMode2D.Impulse);
+            transform.position += dir * Velocity_on_Air * Time.deltaTime;
         }
 
         if(Attack_timer < -50)
