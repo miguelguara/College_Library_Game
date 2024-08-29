@@ -19,6 +19,7 @@ public class Puzzle_movement : MonoBehaviour
      Vector2 move_input = new Vector2 (Input.GetAxisRaw("Horizontal"),0f);
      transform.Translate(move_input * speed * Time.deltaTime, Space.World);
      flip(move_input);
+        anim.SetFloat("Speed", move_input.magnitude);
     }
     
         void flip(Vector2 dir)

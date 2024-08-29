@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 34
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sprites Detetive walking idle 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 887
+        height: 1009
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb6dae3cfde26d47929e53a1b05fa0b
+      internalID: 913259663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Detetive walking idle 1_1
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 0
+        width: 875
+        height: 1026
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 11, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1330a0dbe440e47aab2ddfc345b133
+      internalID: 1293229524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Detetive walking idle 1_2
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 0
+        width: 892
+        height: 1026
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8685a33eee92eca4d9daaeb3cc7ba806
+      internalID: -1879174373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Detetive walking idle 1_3
+      rect:
+        serializedVersion: 2
+        x: 2663
+        y: 0
+        width: 878
+        height: 1026
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6d48a16599d07488a45ff6bc8d2950
+      internalID: -916805513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Detetive walking idle 1_4
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 0
+        width: 897
+        height: 1037
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e100d9ebc90547478fde416532c1df9
+      internalID: -1233164303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Detetive walking idle 1_5
+      rect:
+        serializedVersion: 2
+        x: 4431
+        y: 11
+        width: 861
+        height: 1026
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faff484bc4b608e4f8adb54e9605284a
+      internalID: -860188139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Detetive walking idle 1_6
+      rect:
+        serializedVersion: 2
+        x: 5315
+        y: 11
+        width: 880
+        height: 1015
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3eed0fb11070e84189c85a0d1f1a5f3
+      internalID: 1517716575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Detetive walking idle 1_7
+      rect:
+        serializedVersion: 2
+        x: 6184
+        y: 11
+        width: 892
+        height: 1015
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 19, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d2a384d0134034e964b178b01655a4
+      internalID: -24788762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Detetive walking idle 1_8
+      rect:
+        serializedVersion: 2
+        x: 7065
+        y: 0
+        width: 897
+        height: 1026
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f626945c00e1be408f08ad7285331a2
+      internalID: 1273474823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Detetive walking idle 1_9
+      rect:
+        serializedVersion: 2
+        x: 7953
+        y: 0
+        width: 892
+        height: 1026
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 0, z: 7, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5dc19ddac45d684ebd68fa0becaed3b
+      internalID: 2034931941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Detetive walking idle 1_10
+      rect:
+        serializedVersion: 2
+        x: 8842
+        y: 0
+        width: 892
+        height: 1026
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0e9fb6aa5d7a84695e2ce41ca9f88a
+      internalID: -1548355033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Detetive walking idle 1_11
+      rect:
+        serializedVersion: 2
+        x: 9735
+        y: 0
+        width: 876
+        height: 1009
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29f7edb785262640b839a40ea2cd6d1
+      internalID: 2108887328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites Detetive walking idle 1_12
+      rect:
+        serializedVersion: 2
+        x: 10605
+        y: 0
+        width: 887
+        height: 1009
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e84cea02995dfa4ba8b281af1706c9e
+      internalID: 1178451731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +405,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprites Detetive walking idle 1_0: 913259663
+      Sprites Detetive walking idle 1_1: 1293229524
+      Sprites Detetive walking idle 1_10: -1548355033
+      Sprites Detetive walking idle 1_11: 2108887328
+      Sprites Detetive walking idle 1_12: 1178451731
+      Sprites Detetive walking idle 1_2: -1879174373
+      Sprites Detetive walking idle 1_3: -916805513
+      Sprites Detetive walking idle 1_4: -1233164303
+      Sprites Detetive walking idle 1_5: -860188139
+      Sprites Detetive walking idle 1_6: 1517716575
+      Sprites Detetive walking idle 1_7: -24788762
+      Sprites Detetive walking idle 1_8: 1273474823
+      Sprites Detetive walking idle 1_9: 2034931941
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
