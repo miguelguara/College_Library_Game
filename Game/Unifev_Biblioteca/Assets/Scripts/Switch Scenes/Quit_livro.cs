@@ -17,6 +17,7 @@ public class Quit_livro : MonoBehaviour
     void Update()
     {
         bool Is_on = Physics2D.OverlapCircle(transform.position, Raio,lM); 
+
         if (Is_on) 
         {
             obj.SetActive(true);

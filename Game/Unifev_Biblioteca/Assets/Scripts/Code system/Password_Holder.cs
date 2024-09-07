@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Password_Holder : MonoBehaviour
 {
+    //The puzzle Itens
     public GameObject[] item;
+    [SerializeField]
+    private GameObject Interact_Shine;
     bool open = false;
     Code_Controler code_controler;
     [SerializeField] int c1, c2, c3;
@@ -22,6 +25,7 @@ public class Password_Holder : MonoBehaviour
         if(open)
         {
             ph.enabled = false;
+            Destroy(Interact_Shine);
             Instantiate(item[0], new Vector3(transform.position.x-1f, transform.position.y + 1f, 0f), Quaternion.identity);
             Instantiate(item[1], new Vector3(transform.position.x + 1f, transform.position.y + 1f, 0f), Quaternion.identity);
         }

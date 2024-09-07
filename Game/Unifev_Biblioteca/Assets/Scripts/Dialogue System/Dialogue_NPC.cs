@@ -15,6 +15,11 @@ public class Dialogue_NPC : MonoBehaviour
     public AudioClip[] Dialogue_Voices; 
     bool Can_Talk;
     private move MV;
+
+    //interact UI element
+    [SerializeField]
+    private GameObject UIobj;
+
     void Start()
     {
         DC = FindObjectOfType<Dialogue_Control>();
@@ -25,9 +30,12 @@ public class Dialogue_NPC : MonoBehaviour
     void Update()
     {
        Can_Talk = Physics2D.OverlapCircle(transform.position,Radious,mask);
-       
 
-        if(Input.GetKeyDown(KeyCode.E) && Can_Talk && DC.Can_Move)
+        //Active the UI element, that was the only way that work
+        if (Can_Talk) UIobj.SetActive(true);
+
+        //Check if the player is talkable
+        if (Input.GetKeyDown(KeyCode.E) && Can_Talk && DC.Can_Move)
         {
           DC.Start_Dialogue(txt, names,Dialogue_Voices,Icons,IMG_indexes);
         }

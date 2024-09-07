@@ -28,7 +28,10 @@ public class Fox_Dialogue : MonoBehaviour
     [SerializeField] private int[] DialogueNum2;
     [SerializeField] private AudioClip[] DialogueClip2;
 
-    // Start is called before the first frame update
+    //interact UI element
+    [SerializeField]
+    private GameObject UI_Interactive;
+
     void Start()
     {
      Ring = false;
@@ -38,6 +41,10 @@ public class Fox_Dialogue : MonoBehaviour
     private void Update()
     {
         bool Can_talk = Physics2D.OverlapCircle(transform.position, Radius,Mask);
+
+        //Active the UI element, that was the only way that work
+        if (Can_talk) { UI_Interactive.SetActive(true); }
+        else { UI_Interactive.SetActive(false); }
 
         if (Can_talk) 
         {
