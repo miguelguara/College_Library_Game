@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Player_Movement : MonoBehaviour
     private bool ground_Check;
     private Rigidbody2D rb;
 
+    //The attack variables
     [Header("Radious of attack, enemys layer")]
     public float R_attack;
     public float Attack_Cooldown;
@@ -23,13 +25,19 @@ public class Player_Movement : MonoBehaviour
     [SerializeField]
     private Transform Hit_point;
 
-    
+    //Life UI
+    [SerializeField]
+    private Text Life_UI;
+
+    private Game_over GameOver;
+
     Vector3 dir;
 
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();   
+        GameOver = FindObjectOfType<Game_over>();
     }
 
     void Update()
@@ -70,7 +78,12 @@ public class Player_Movement : MonoBehaviour
     public void Take_Hit(int damage)
     {
         Life-= damage;
+        Life_UI.text = Life.ToString();
         anim.SetTrigger("Hit");
+        if(Life <= 0) { 
+            Life_UI.text = 0.ToString();
+            GameOver.GAME_OVER(); 
+        }
     }
 
     void Jump()

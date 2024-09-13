@@ -8,6 +8,16 @@ public class Code_Controler : MonoBehaviour
     public GameObject Code_Obj;
     int N1, N2, N3;
     public Text Ntx1, Ntx2,Ntx3;
+    //Just to play the SFX
+    private SFX_controller SFX;
+    [SerializeField]
+    private AudioClip Click_audio;
+
+    private void Start()
+    {
+        SFX = FindObjectOfType<SFX_controller>();
+    }
+
 
     public bool verificar_Code(int c1,int c2, int c3,bool Check)
     {
@@ -30,6 +40,7 @@ public class Code_Controler : MonoBehaviour
 
     public void N1_Cima()
     {
+        SFX.PlaySFX(Click_audio);
         N1++;
         Ntx1.text = N1.ToString();
         if(N1 > 9)
@@ -41,6 +52,7 @@ public class Code_Controler : MonoBehaviour
 
     public void N1_Baixo()
     {
+        SFX.PlaySFX(Click_audio);
         N1--;
         Ntx1.text = N1.ToString();
         if (N1 < 0)
@@ -52,6 +64,7 @@ public class Code_Controler : MonoBehaviour
 
     public void N2_Cima()
     {
+        SFX.PlaySFX(Click_audio);
         N2++;
         Ntx2.text = N2.ToString();
         if (N2 > 9)
@@ -63,6 +76,7 @@ public class Code_Controler : MonoBehaviour
 
     public void N2_Baixo()
     {
+        SFX.PlaySFX(Click_audio);
         N2--;
         Ntx2.text = N2.ToString();
         if (N2 < 0)
@@ -74,6 +88,7 @@ public class Code_Controler : MonoBehaviour
 
     public void N3_Cima()
     {
+        SFX.PlaySFX(Click_audio);
         N3++;
         Ntx3.text = N3.ToString();
         if (N3 > 9)
@@ -85,6 +100,7 @@ public class Code_Controler : MonoBehaviour
 
     public void N3_Baixo()
     {
+        SFX.PlaySFX(Click_audio);
         N3--;
         Ntx3.text = N3.ToString();
         if (N3 < 0)

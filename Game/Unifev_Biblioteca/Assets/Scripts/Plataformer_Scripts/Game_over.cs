@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game_over : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    //The UI object
+    public GameObject GO;
+
+    public void GAME_OVER()
     {
-        
+        GO.SetActive(true);
+        Time.timeScale = 0f;
+    }
+    public void Back_to_library()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(1);
+    }
+    public void Retry()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(2);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

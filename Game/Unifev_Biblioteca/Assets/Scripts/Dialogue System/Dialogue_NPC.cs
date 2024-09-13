@@ -32,7 +32,7 @@ public class Dialogue_NPC : MonoBehaviour
        Can_Talk = Physics2D.OverlapCircle(transform.position,Radious,mask);
 
         //Active the UI element, that was the only way that work
-        if (Can_Talk) UIobj.SetActive(true);
+        UIobj.SetActive(Can_Talk);
 
         //Check if the player is talkable
         if (Input.GetKeyDown(KeyCode.E) && Can_Talk && DC.Can_Move)

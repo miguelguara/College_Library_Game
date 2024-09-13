@@ -8,11 +8,20 @@ public class Note_Controller : MonoBehaviour
     [SerializeField]
     GameObject note_GO;
     public Text tx;
+    public AudioClip Paper_clip;
+
+    private SFX_controller SFX;
+
+    private void Start()
+    {
+        SFX = FindObjectOfType<SFX_controller>();
+    }
 
     public void Note(string message)
     {
         note_GO.SetActive(true);
         tx.text = message;
+        SFX.PlaySFX(Paper_clip);
     }
     public void clean_Note()
     {
