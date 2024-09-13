@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.565217, b: 1, a: 1}
+  m_Color: {r: 0.3150943, g: 0.70186454, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Entre linhas
+  m_Text: Entre linhas...
 --- !u!222 &67387804
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -219,6 +219,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2419892412691428261, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558362336228691231, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -270,6 +274,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7162850134200941577, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7671518703194348816, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7926210287246068591, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8898784630044830463, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_Name
       value: Dialogue Controller
@@ -277,6 +293,10 @@ PrefabInstance:
     - target: {fileID: 8898784630044830463, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8954858457815077315, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -756,7 +776,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1730946288}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 96350179}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: Quit_game
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1730946288
 MonoBehaviour:
   m_ObjectHideFlags: 0
