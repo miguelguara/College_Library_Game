@@ -107,7 +107,7 @@ public class Meelee_Enemy : MonoBehaviour
         Collider2D c = Physics2D.OverlapCircle(Attack_Point.position, attack_Range, Mask);
         if(c != null)
         {
-            c.gameObject.GetComponent<Player_Movement>().Take_Hit(2);
+            c.gameObject.GetComponent<Player_Movement>().Take_Hit(1);
         }
     }
     
