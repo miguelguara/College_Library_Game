@@ -16,7 +16,7 @@ public class Quit_livro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool Is_on = Physics2D.OverlapCircle(transform.position, Raio,lM); 
+        bool Is_on = Physics2D.OverlapCircle(transform.position, Raio,lM);
 
         if (Is_on) 
         {
@@ -34,7 +34,7 @@ public class Quit_livro : MonoBehaviour
     //To load when the kig dont want to play anymore
     public void Quit_Fase()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
     //Set off the UI of the quit UI
     public void Set_OFF()
