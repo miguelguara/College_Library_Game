@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Player_Movement : MonoBehaviour
 {
+    //Movement config
     [Header("Movment Config")]
     public float Velocity;
     public float Velocity_on_Air;
@@ -29,6 +30,10 @@ public class Player_Movement : MonoBehaviour
     [SerializeField]
     private Text Life_UI;
 
+    [Header("Player SFX")]
+    private AudioSource Player_Source;
+    public List<AudioClip> SFXs = new List<AudioClip>();
+
     private Game_over GameOver;
 
     Vector3 dir;
@@ -38,6 +43,7 @@ public class Player_Movement : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();   
         GameOver = FindObjectOfType<Game_over>();
+        Player_Source = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -68,12 +74,20 @@ public class Player_Movement : MonoBehaviour
         {
             Attack();
             Attack_timer = Attack_Cooldown;
+            Play_Audio(0);
+            
         }
 
         flip();
         Jump();
     }
- 
+
+    public void Play_Audio( int index) 
+    {
+        Player_Source.clip = SFXs[index];
+        Player_Source.Play();
+    }
+
 
     public void Take_Hit(int damage)
     {
