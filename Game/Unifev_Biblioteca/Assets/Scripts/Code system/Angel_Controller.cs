@@ -12,7 +12,10 @@ public class Angel_Controller : MonoBehaviour
     [SerializeField]
     private SpriteRenderer Sr;
     public Transform Ring_pos;
-   public void Right_Stone()
+
+
+   //if the stone is right the angel activate
+    public void Right_Stone()
     {
         count++;
         if(count == 2)

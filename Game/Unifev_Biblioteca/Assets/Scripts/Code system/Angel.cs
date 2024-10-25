@@ -17,6 +17,7 @@ public class Angel : MonoBehaviour
         SRenderer = GetComponent<SpriteRenderer>();
     }
 
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if(col.tag == Stone_name)
