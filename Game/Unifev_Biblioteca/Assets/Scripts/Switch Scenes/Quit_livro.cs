@@ -36,11 +36,6 @@ public class Quit_livro : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-    //Set off the UI of the quit UI
-    public void Set_OFF()
-    {
-        obj2.SetActive(false);
-    }
 
     private void OnDrawGizmos()
     {

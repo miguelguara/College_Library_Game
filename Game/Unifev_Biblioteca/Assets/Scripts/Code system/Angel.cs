@@ -10,11 +10,15 @@ public class Angel : MonoBehaviour
     private Sprite sp;
     private SpriteRenderer SRenderer;
     private Angel_Controller AC;
+    private SFX_controller SFX;
+    [SerializeField]
+    private AudioClip Ac;
 
     private void Start()
     {
         AC = FindAnyObjectByType<Angel_Controller>();
         SRenderer = GetComponent<SpriteRenderer>();
+        SFX = FindObjectOfType<SFX_controller>();
     }
 
 
@@ -24,6 +28,7 @@ public class Angel : MonoBehaviour
         {
             AC.Right_Stone();
             SRenderer.sprite = sp;
+            SFX.PlaySFX(Ac);
             Destroy(col.gameObject);
         }
     }

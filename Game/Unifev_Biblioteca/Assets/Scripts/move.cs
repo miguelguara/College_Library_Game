@@ -31,7 +31,5 @@ public class move : MonoBehaviour
                 anim.SetFloat("Idle V", dr.y);
             }
         }
-
-        
     }
 }

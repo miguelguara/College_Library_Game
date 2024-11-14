@@ -12,8 +12,9 @@ public class Angel_Controller : MonoBehaviour
     [SerializeField]
     private SpriteRenderer Sr;
     public Transform Ring_pos;
-
-
+    //play it when the chest open
+    [SerializeField]
+    private AudioSource Chest_source;
    //if the stone is right the angel activate
     public void Right_Stone()
     {
@@ -22,6 +23,8 @@ public class Angel_Controller : MonoBehaviour
         {
             Instantiate(Ring,Ring_pos.position,Quaternion.identity);
             Sr.sprite = Spr;
+            Chest_source.Play();
         }
     }
+    
 }
