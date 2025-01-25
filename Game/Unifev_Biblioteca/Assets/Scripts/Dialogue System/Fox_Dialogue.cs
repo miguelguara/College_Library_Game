@@ -59,7 +59,7 @@ public class Fox_Dialogue : MonoBehaviour
              DC.Start_Dialogue(Dialogues2,names2, DialogueClip2, DialogueImg2, DialogueNum2);
             }
             //Jump the dialogue
-            else if(Input.GetKeyDown(KeyCode.E) && !DC.Can_Move) 
+            else if(Input.GetKeyDown(KeyCode.Space) && !DC.Can_Move) 
             {
                 DC.NextDialogue();
             }

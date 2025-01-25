@@ -66,7 +66,6 @@ public class Meelee_Enemy : MonoBehaviour
 
     public void FollowAgain()
     {
-
         StopAllCoroutines();
         StartCoroutine(FA());
     }

@@ -39,7 +39,7 @@ public class Dialogue_NPC : MonoBehaviour
         {
           DC.Start_Dialogue(txt, names,Dialogue_Voices,Icons,IMG_indexes);
         }
-        else if(Input.GetKeyDown(KeyCode.E) && Can_Talk && !DC.Can_Move)
+        else if(Input.GetKeyDown(KeyCode.Space) && Can_Talk && !DC.Can_Move)
         {
             DC.NextDialogue();
         }
