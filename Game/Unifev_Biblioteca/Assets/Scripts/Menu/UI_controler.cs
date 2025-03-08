@@ -4,15 +4,50 @@ using UnityEngine;
 
 public class UI_controler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject SetaEsquerda,SetaDireita;
+
+    private void Start()
     {
-        
+        PiscarDireira();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PiscarDireira() 
     {
-        
+        StopAllCoroutines();
+        StartCoroutine(AtivarSetaDireita());
+        SetaEsquerda.SetActive(false);
+    }
+
+    public void PiscarEsquerda()
+    {
+        StopAllCoroutines();
+        StartCoroutine(AtivarSetaEsquerda());
+        SetaDireita.SetActive(false);
+    }
+
+    public void PiscarAmbas()
+    {
+        StopAllCoroutines();
+        StartCoroutine(AtivarSetaEsquerda());
+        StartCoroutine(AtivarSetaDireita());
+    }
+
+    IEnumerator AtivarSetaEsquerda()
+    {
+        SetaEsquerda.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        SetaEsquerda.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine(AtivarSetaEsquerda());
+    }
+
+
+    IEnumerator AtivarSetaDireita()
+    {
+        SetaDireita.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        SetaDireita.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine(AtivarSetaDireita());
     }
 }
