@@ -11086,6 +11086,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6231638781620551161, guid: 6d7630fc8520cd74d877f953f753f5fe, type: 3}
+      propertyPath: m_Text
+      value: "\n  WASD -  PARA MOVER\n\n\n  USE O BOT\xC3O ESQUERDO DO MOUSE PARA
+        CLICAR NOS ITENS BRILHANDO\n\n\n\n  CLIQUE NOS ITENS DA MOCHILA PARA SOLTA-LOS
+        NO CH\xC3O OU DAR A PERSONAGENS"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490097075711768995, guid: 6d7630fc8520cd74d877f953f753f5fe, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
