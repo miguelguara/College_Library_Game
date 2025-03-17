@@ -20,6 +20,7 @@ public class Menu : MonoBehaviour
 
     public IEnumerator S_game()
     {
+        yield return new WaitForSeconds(0.7f);
         m_Animator.SetBool("Transition",true);
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(1);
