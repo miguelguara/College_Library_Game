@@ -19112,11 +19112,15 @@ MonoBehaviour:
   - Vou te dar algumas dicas de leitura!
   - "Tem dois livros divertidissimos mais ora cima. um conta a histora de um guaxinim
     tentando achar a alian\xE7a roubada e o outro conta a historia de um heroi solitario
-    em uma florenta cheia de monstros."
-  IMG_indexes: 0000000000000000
+    em uma florensta cheia de monstros."
+  - "Tem dois livros divertidissimos mais ora cima. um conta a histora de um guaxinim
+    tentando achar a alian\xE7a roubada e o outro conta a historia de um heroi solitario
+    em uma florensta cheia de monstros."
+  IMG_indexes: 000000000000000000000000
   Dialogue_Voices:
   - {fileID: 8300000, guid: 5181f7ffb33807642847b682ca42711b, type: 3}
   - {fileID: 8300000, guid: 5dfffc2404efdf943be8ffa66f526005, type: 3}
+  - {fileID: 8300000, guid: f78af46d9b43a6c4f8b141ff717ab3d5, type: 3}
   UIobj: {fileID: 552578876}
 --- !u!1 &1527341336 stripped
 GameObject:
