@@ -19123,17 +19123,15 @@ MonoBehaviour:
     m_Bits: 8
   Icons:
   - {fileID: 21300000, guid: ee5a168e17db50e4a984bac2a74cc73e, type: 3}
-  Radious: 1.15
+  Radious: 1.28
   names:
   - Menechelli
   txt:
   - Vou te dar algumas dicas de leitura!
   - "Tem dois livros divertidissimos mais ora cima. um conta a histora de um guaxinim
     tentando achar a alian\xE7a roubada e o outro conta a historia de um heroi solitario
-    em uma florensta cheia de monstros."
-  - "Tem dois livros divertidissimos mais ora cima. um conta a histora de um guaxinim
-    tentando achar a alian\xE7a roubada e o outro conta a historia de um heroi solitario
-    em uma florensta cheia de monstros."
+    em uma floresta cheia de monstros!"
+  - Acho que voce vai adorar!
   IMG_indexes: 000000000000000000000000
   Dialogue_Voices:
   - {fileID: 8300000, guid: 5181f7ffb33807642847b682ca42711b, type: 3}
@@ -23731,13 +23729,21 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a01d8c6827ac80b45ae2d846e1fa58a4, type: 3}
   Radious: 1.7
   names:
-  - 
+  - Marcia
   txt:
-  - 
-  IMG_indexes: 000000000000000000000000
+  - Oi! Bom dia aluno como vai?
+  - "Espero que bem, seja muito bem vindo a nossa biblioteca aqui voce podera ler
+    e se aventurar em v\xE1rios mundos. Voce j\xE1 sabe como funciona a biblioteca!?"
+  - "Para poder retirar um livro voc\xEA deve informar seu RA e entrega-lo para mim."
+  - "Al\xE9m disso h\xE1 algumas regras que voc\xEA deve seguir: 1-Manter-se em silencio;
+    2-N\xE3o comer e nem beber aqui; 3-N\xE3o rabiscar os livros; 4-Estar acompanhado
+    de um respons\xE1vel. "
+  IMG_indexes: 00000000000000000000000000000000
   Dialogue_Voices:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 4044927bf36ea614f9ff096994c790f8, type: 3}
+  - {fileID: 8300000, guid: b0a0ef9126bcb094eb32370cae2e816a, type: 3}
+  - {fileID: 8300000, guid: bbcf060c16c6ca24391773f23b098f62, type: 3}
+  - {fileID: 8300000, guid: 4fab40b6d1769574aa6382c6921caf75, type: 3}
   UIobj: {fileID: 195993323}
 --- !u!1001 &1331593423387650305
 PrefabInstance:
@@ -23761,7 +23767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3596294287781917160, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4144975008311848830, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_IsActive
