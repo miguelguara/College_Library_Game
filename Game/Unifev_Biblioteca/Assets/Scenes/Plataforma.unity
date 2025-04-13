@@ -1611,6 +1611,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5906924667150663602, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 308079118}
+    - target: {fileID: 5906924667150663602, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906924667150663602, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Settings_Menu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906924667150663602, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6071399730737212556, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1700,6 +1716,17 @@ PrefabInstance:
       addedObject: {fileID: 1798753993}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+--- !u!114 &308079118 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9158452537075176541, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+  m_PrefabInstance: {fileID: 308079117}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5963c203491f2443ba43322539dfbe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &339193701
 PrefabInstance:
   m_ObjectHideFlags: 0
