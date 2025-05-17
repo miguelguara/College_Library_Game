@@ -19001,7 +19001,7 @@ MonoBehaviour:
   - Menechelli
   txt:
   - Vou te dar algumas dicas de leitura!
-  - "Tem dois livros divertidissimos mais ora cima. um conta a histora de um guaxinim
+  - "Tem dois livros divertidissimos mais pra cima. Um conta a histora de um guaxinim
     tentando achar a alian\xE7a roubada e o outro conta a historia de um heroi solitario
     em uma floresta cheia de monstros!"
   - Acho que voce vai adorar!
@@ -23621,13 +23621,57 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 58016753324300297, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 479175828262295973, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662516579346428968, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259081321749458753, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259081321749458753, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3596294287781917160, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4935076578735001719, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5365391735009526279, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5365391735009526279, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5365391735009526279, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6065921906436463606, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6065921906436463606, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6065921906436463606, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7102441094761517497, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23668,6 +23712,14 @@ PrefabInstance:
     - target: {fileID: 7102441094761517497, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412335834252393899, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412335834252393899, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8898784630044830463, guid: 33c301ea3037f2647bf117194ef7914e, type: 3}
       propertyPath: m_Name
