@@ -8,6 +8,9 @@ public class move : MonoBehaviour
     float Speed;
     private Dialogue_Control DC;
     private Animator anim;
+    private int Valor;
+
+
     // Start is called before the first frame update
     void Start()
     {
